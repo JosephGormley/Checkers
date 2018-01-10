@@ -28,23 +28,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="openGame"
+                android:onClick="startGame"
                 android:text="New" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="openGame"
-                android:text="Continue" />?
+                android:text="Continue"
+                tools:visibility="invisible" />
 
-            <!-- FUTURE VERSIONS -->
+            <!-- FUTURE VERSIONS
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="openSettings"
                 android:text="Settings" />
+            -->
 
         </LinearLayout>
 
