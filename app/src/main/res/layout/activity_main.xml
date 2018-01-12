@@ -17,37 +17,57 @@
             android:layout_centerInParent="true"
             android:orientation="vertical">
 
+            <!-- THIS IS GOING TO BE AN IMAGEVIEW -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
                 android:text="Checkers"
                 android:textSize="30sp" />
 
-            <Button
+            <!-- NEW GAME BUTTON -->
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:onClick="startGame"
-                android:text="New" />
+                android:layout_marginBottom="10dp">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Continue"
-                tools:visibility="invisible" />
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@android:color/holo_blue_light"
+                    android:onClick="startGame"
+                    android:src="@android:color/holo_green_dark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:layout_centerInParent="true"
+                    android:textSize="30sp" />
 
-            <!-- FUTURE VERSIONS
-            <Button
+            </RelativeLayout>
+
+            <!-- CONTINUE GAME BUTTON -->
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:onClick="openSettings"
-                android:text="Settings" />
-            -->
+                android:layout_height="wrap_content" >
+
+
+                <ImageView
+                    android:layout_width="135dp"
+                    android:layout_height="50dp"
+                    android:src="@android:color/holo_green_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Continue"
+                    android:textSize="30sp" />
+            </RelativeLayout>
 
         </LinearLayout>
 
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>

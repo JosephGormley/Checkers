@@ -9,9 +9,8 @@ enum Turn { RED, BLACK}
 
 public class MainActivity extends AppCompatActivity {
 
-    Piece[][] checkersBoard; // Representation of state of the game.
-    Turn turn; // Indicate which player's turn.
-
+    static Piece[][] checkersBoard; // Representation of state of the game.
+    Turn turn; // Indicate player's turn.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +46,9 @@ public class MainActivity extends AppCompatActivity {
         checkersBoard = new Piece[8][8];
         turn = Turn.RED;
 
-        // Fill board with pieces.
+        // @TODO
+        // Place red pieces.
+        Piece
 
 
     }
