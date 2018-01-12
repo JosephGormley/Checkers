@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         // @TODO
         // Place red pieces.
-        Piece
+        // Piece
 
 
     }

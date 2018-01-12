@@ -8,60 +8,62 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
 
         <LinearLayout
             android:id="@+id/menuLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:gravity="center"
             android:orientation="vertical">
 
             <!-- THIS IS GOING TO BE AN IMAGEVIEW -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
+            <ImageView
+                android:layout_width="460dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="75dp"
                 android:gravity="center"
-                android:text="Checkers"
-                android:textSize="30sp" />
+                android:src="@drawable/menu_title" />
+
 
             <!-- NEW GAME BUTTON -->
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
                 android:layout_marginBottom="10dp">
 
                 <ImageView
-                    android:layout_width="135dp"
-                    android:layout_height="50dp"
-                    android:backgroundTint="@android:color/holo_blue_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:onClick="startGame"
                     android:src="@android:color/holo_green_dark" />
+
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="New"
-                    android:layout_centerInParent="true"
                     android:textSize="30sp" />
 
             </RelativeLayout>
 
             <!-- CONTINUE GAME BUTTON -->
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_width="130dp"
+                android:layout_height="50dp">
 
 
                 <ImageView
-                    android:layout_width="135dp"
-                    android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:src="@android:color/holo_green_light" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="Continue"
                     android:textSize="30sp" />
             </RelativeLayout>
