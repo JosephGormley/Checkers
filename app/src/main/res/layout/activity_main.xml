@@ -19,56 +19,35 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <!-- THIS IS GOING TO BE AN IMAGEVIEW -->
+            <!-- TITLE -->
             <ImageView
-                android:layout_width="460dp"
-                android:layout_height="85dp"
-                android:layout_marginBottom="75dp"
+                android:layout_width="280dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="30dp"
                 android:gravity="center"
                 android:src="@drawable/menu_title" />
 
 
             <!-- NEW GAME BUTTON -->
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="10dp">
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="startGame"
+                android:src="@drawable/menu_continue_transparent" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:onClick="startGame"
-                    android:src="@android:color/holo_green_dark" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="New"
-                    android:textSize="30sp" />
-
-            </RelativeLayout>
 
             <!-- CONTINUE GAME BUTTON -->
-            <RelativeLayout
-                android:layout_width="130dp"
-                android:layout_height="50dp">
+            <ImageView
+                android:layout_width="145dp"
+                android:layout_height="30dp"
+                android:onClick="startGame"
+                android:src="@drawable/menu_new_game" />
 
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@android:color/holo_green_light" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:text="Continue"
-                    android:textSize="30sp" />
-            </RelativeLayout>
 
         </LinearLayout>
+
 
     </RelativeLayout>
 

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     /*********************
      * BUTTONS - ONCLICK *
      *********************/
@@ -36,19 +37,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /*****************
-     * HELPER METHODS *
-     *****************/
+    /***********
+     * METHODS *
+     ***********/
 
     /* Initializes back-end representation of game */
-    public void init(){
+    public void init() {
 
         checkersBoard = new Piece[8][8];
         turn = Turn.RED;
 
-        // @TODO
         // Place red pieces.
-        // Piece
+        for (int i = 0; i < 8; i++) {
+            if (i % 2 == 0) {
+                // Sixth row and eighth row.
+                checkersBoard[7][i] = new Piece(Color.R);
+                checkersBoard[5][i] = new Piece(Color.R);
+            } else {
+                // Seventh row.
+                checkersBoard[6][i] = new Piece(Color.R);
+            }
+        }
+
+        // Place black pieces.
+        for (int i = 0; i < 8; i++) {
+            if (i % 2 != 0) {
+                // First row and third row.
+                checkersBoard[0][i] = new Piece(Color.B);
+                checkersBoard[2][i] = new Piece(Color.B);
+            } else {
+                // Second row.
+                checkersBoard[1][i] = new Piece(Color.B);
+            }
+        }
 
 
     }

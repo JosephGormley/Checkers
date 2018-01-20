@@ -5,10 +5,10 @@ package com.example.joegormley.checkers;
  */
 
 enum Color {
-    RED, BLACK
+    R, B
 }
 enum Type {
-    PLAIN, KING
+    P, K
 }
 
 public class Piece {
@@ -16,16 +16,16 @@ public class Piece {
     /*************
      * MEMBER(S) *
      *************/
-    Piece piece;
+    Type piece;
     Color color;
+
     /******************
      * CONSTRUCTOR(S) *
      ******************/
-    public Piece(Piece piece, Color color){
-        this.piece = piece;
+    public Piece(Color color){
+        piece = Type.P;
         this.color = color;
     }
-
 
     /*************
      * METHOD(S) *
@@ -36,7 +36,7 @@ public class Piece {
     }
 
     public String toString(){
-        return color + " " + piece;
+        return color + "" + piece;
     }
 
 }
