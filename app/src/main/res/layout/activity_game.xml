@@ -6,14 +6,36 @@
     android:layout_height="match_parent"
     tools:context="com.example.joegormley.checkers.GameActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_width="match_parent" >
+        android:background="@color/colorAccent">
 
-        <TextView
-            android:layout_height="wrap_content"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:text="Game Activity" />
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+
+        <!-- Player's turn -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_blue_bright" />
+
+        <!-- Checker's board -->
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:background="@drawable/board" />
+
+        <!-- Button's regarding gameplay -->
+
     </LinearLayout>
+
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

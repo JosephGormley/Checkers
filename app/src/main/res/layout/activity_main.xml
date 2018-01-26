@@ -12,7 +12,6 @@
         android:background="@color/colorAccent">
 
         <LinearLayout
-            android:id="@+id/menuLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -28,22 +27,22 @@
                 android:src="@drawable/menu_title" />
 
 
-            <!-- NEW GAME BUTTON -->
+            <!-- CONTINUE BUTTON -->
             <ImageView
+                android:src="@drawable/menu_continue_transparent"
                 android:layout_width="145dp"
                 android:layout_height="30dp"
                 android:layout_marginBottom="15dp"
                 android:onClick="startGame"
-                android:src="@drawable/menu_continue_transparent" />
+                android:clickable="false" />
 
 
-            <!-- CONTINUE GAME BUTTON -->
+            <!-- NEW GAME BUTTON -->
             <ImageView
                 android:layout_width="145dp"
                 android:layout_height="30dp"
                 android:onClick="startGame"
-                android:src="@drawable/menu_new_game" />
-
+                android:src="@drawable/menu_new" />
 
 
         </LinearLayout>

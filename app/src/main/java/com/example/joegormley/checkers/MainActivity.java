@@ -16,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Disable continue button.
+
+
     }
 
 
@@ -24,18 +28,15 @@ public class MainActivity extends AppCompatActivity {
      *********************/
 
     public void startGame(View view){
-        Intent i = new Intent(this, GameActivity.class);
-        startActivity(i);
 
         // Initialize back-end representation of board.
         init();
-    }
 
-    public void openSettings(View view){
-        Intent i = new Intent(this, SettingsActivity.class);
+        // Switch to game activity.
+        Intent i = new Intent(this, GameActivity.class);
         startActivity(i);
-    }
 
+    }
 
     /***********
      * METHODS *
